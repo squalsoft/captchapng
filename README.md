@@ -1,29 +1,23 @@
-﻿#Captcha PNG generator
-A numeric captcha generator for Node.js
+﻿# Lite PNG captcha generator
+
+A numeric captcha generator for Node.js. 
 
 ## Features
+
 * Only generate numeric captcha PNG image
 * Build-in fonts
 * Characters up and down, left and right limits, random displacement
 * Full JavaScript
 
 ## Examples
-```javascript
-/**
- * Captcha PNG img generator
- * @Author: George Chan
- * @Email: gchan@21cn.com
- * @Version: 1.0
- * @Date: 2013-08-18
- * @license http://www.opensource.org/licenses/bsd-license.php BSD License
- */
 
+```javascript
 var http = require('http');
-var captchapng = require('captchapng');
+var captchapng = require('captchapng2');
 
 http.createServer(function (request, response) {
     if(request.url == '/captcha.png') {
-        var p = new captchapng(80,30,parseInt(Math.random()*9000+1000)); // width,height,numeric captcha
+        var p = new captchapng(80, 30, parseInt(Math.random()*9000+1000)); // width,height,numeric captcha
         p.color(0, 0, 0, 0);  // First color: background (red, green, blue, alpha)
         p.color(80, 80, 80, 255); // Second color: paint (red, green, blue, alpha)
 
