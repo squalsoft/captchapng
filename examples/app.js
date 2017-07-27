@@ -1,18 +1,18 @@
 'use strict';
 
-let http = require('http');
-let captchapng = require('..');
+const http = require('http');
+const captchapng = require('..');
 
 http.createServer(function (req, res) {
   if(req.url == '/captcha.png') {
     let rand = parseInt(Math.random() * 9000 + 1000);
     let png = new captchapng(80, 30, rand); // width,height, numeric captcha
 
-    png.color(80, 80, 80, 255);
-
     res.writeHead(200, { 'Content-Type': 'image/png'});
     res.end(png.getBuffer());
-  } else res.end('');
+  } else {
+    res.end('');
+  }
 }).listen(8181);
 
 console.log('Web server started.\n http:\\\\127.0.0.1:8181\\captcha.png');
