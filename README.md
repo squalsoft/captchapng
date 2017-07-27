@@ -1,4 +1,5 @@
-﻿# Lite PNG captcha generator
+﻿
+# Lite PNG captcha generator
 
 More faster and colorful version of [`captchapng`](https://www.npmjs.com/package/captchapng). (2~3 faster than orginal)
 
@@ -27,7 +28,7 @@ http.createServer(function (req, res) {
 }).listen(8181);
 
 console.log('Web server started.\nSee http:\\\\127.0.0.1:8181\\captcha.png');
-``
+```
 
 output:
 ![captcha](example/captcha.png)
