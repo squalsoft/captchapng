@@ -31,4 +31,5 @@ console.log('Web server started.\nSee http:\\\\127.0.0.1:8181\\captcha.png');
 ```
 
 output:
-![captcha](example/captcha.png)
+
+![captcha](examples/captcha.png)
