@@ -12,7 +12,7 @@
     "captchapng"
   ],
   "dependencies": {
-    "node-pnglib": "^1.4.0"
+    "node-pnglib": "^1.5.2"
   },
   "license": "BSD-2-Clause",
   "bugs": {
