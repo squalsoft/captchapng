@@ -6,7 +6,7 @@ More faster and colorful version of [`captchapng`](https://www.npmjs.com/package
 ## Installation
 
 ```shell
-npm insatll captchapng2
+npm install captchapng2
 ```
 
 ## Examples
