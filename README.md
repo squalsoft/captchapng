@@ -2,6 +2,20 @@
 
 Added plus (+) digit rendering.
 
+Install with:
+
+```npm install https://github.com/squalsoft/captchapng/tarball/master
+
+```
+
+Or in package.json:
+
+```
+"dependencies": {
+  "bar": "git://github.com/squalsoft/captchapng.git"
+}
+```
+
 More faster and colorful version of [`captchapng`](https://www.npmjs.com/package/captchapng). (2~3 faster than orginal)
 
 ## Installation
