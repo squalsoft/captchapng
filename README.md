@@ -12,7 +12,7 @@ Or in package.json:
 
 ```
 "dependencies": {
-  "bar": "git://github.com/squalsoft/captchapng.git"
+  “captchapng2”: “https://github.com/squalsoft/captchapng/tarball/master“,
 }
 ```
 
