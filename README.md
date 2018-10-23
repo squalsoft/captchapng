@@ -1,5 +1,6 @@
-﻿
-# Lite PNG captcha generator
+﻿# Lite PNG captcha generator
+
+Added plus (+) digit rendering.
 
 More faster and colorful version of [`captchapng`](https://www.npmjs.com/package/captchapng). (2~3 faster than orginal)
 
@@ -12,22 +13,24 @@ npm install captchapng2
 ## Examples
 
 ```javascript
-const http = require('http');
-const captchapng = require('captchapng2');
+const http = require('http')
+const captchapng = require('captchapng2')
 
-http.createServer(function (req, res) {
-  if(req.url == '/captcha.png') {
-    let rand = parseInt(Math.random() * 9000 + 1000);
-    let png = new captchapng(80, 30, rand); // width,height, numeric captcha
+http
+  .createServer(function(req, res) {
+    if (req.url == '/captcha.png') {
+      let rand = parseInt(Math.random() * 9000 + 1000)
+      let png = new captchapng(80, 30, rand) // width,height, numeric captcha
 
-    res.writeHead(200, { 'Content-Type': 'image/png'});
-    res.end(png.getBuffer());
-  } else {
-    res.end('');
-  }
-}).listen(8181);
+      res.writeHead(200, { 'Content-Type': 'image/png' })
+      res.end(png.getBuffer())
+    } else {
+      res.end('')
+    }
+  })
+  .listen(8181)
 
-console.log('Web server started.\nSee http:\\\\127.0.0.1:8181\\captcha.png');
+console.log('Web server started.\nSee http:\\\\127.0.0.1:8181\\captcha.png')
 ```
 
 output:
