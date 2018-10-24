@@ -1,6 +1,6 @@
 {
   "name": "captchapng2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A numeric captcha generator for Node.js",
   "author": "Lellansin",
   "main": "./lib/captchapng.js",
